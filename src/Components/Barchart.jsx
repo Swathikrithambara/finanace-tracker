@@ -21,19 +21,11 @@ export default function BarChart({ monthlyData, type = "income" }) {
   // Different colors for income vs expenses
   const barColor =
     type === "income"
-<<<<<<< HEAD
       ? "rgba(142, 197, 252, 0.8)" // pastel blue
       : "rgba(255, 207, 223, 0.8)"; // pastel peach
 
   const borderColor =
     type === "income" ? "rgba(142, 197, 252, 1)" : "rgba(255, 207, 223, 1)";
-=======
-      ? "#004b23" // pastel blue
-      : "rgba(255, 207, 223, 0.8)"; // pastel peach
-
-  const borderColor =
-    type === "income" ? "#007200" : "rgba(255, 207, 223, 1)";
->>>>>>> 0bb6f17012b1e9b5820aed53f2148f701d7112c3
 
   const data = {
     labels: safeLabels,
